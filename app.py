@@ -1,6 +1,9 @@
 from chalice import Chalice
+import os
 
-app = Chalice(app_name='tmp')
+# This will determine API Gateway name
+ENV_NAME = os.getenv('ENV_NAME')
+app = Chalice(app_name='INSERT_NAME_HERE-{}'.format(ENV_NAME))
 
 
 @app.route('/')
