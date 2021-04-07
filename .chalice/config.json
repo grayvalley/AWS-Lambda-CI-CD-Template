@@ -1,0 +1,19 @@
+{
+  "version": "2.0",
+  "app_name": "helloworld",
+  "stages": {
+    "dev": {
+      "environment_variables": {
+        "ENV_NAME": "dev-api"
+      },
+      "api_gateway_stage": "dev"
+    },
+    "prod": {
+      "environment_variables": {
+        "ENV_NAME": "prod-api"
+      },
+      "api_gateway_stage": "prod"
+    }
+  }
+}
+
